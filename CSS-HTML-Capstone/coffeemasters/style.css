@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0 auto;
+}
+
+.page {
+  margin: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "items-section items-section items-section name-section name-section name-section"
+    "items-section items-section items-section payment-section payment-section payment-section"
+    "items-section items-section items-section payment-section payment-section payment-section"
+    "total-section total-section total-section total-section total-section total-section"
+    "div-button div-button div-button div-button div-button div-button";
+  gap: 1rem;
+}
+
+.nav {
+  display: flex;
+  grid-area: brand-bar-div;
+  align-items: center;
+  justify-content: center;
+  font-size: 12pt;
+  background-color: #43281c;
+  color: #fbf2c0;
+}
+
+.logo {
+  width: 50px;
+  padding-right: 10px;
+}
+
+.section-title {
+  color: #885a2d;
+  font-size: 15pt;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #c89a597c;
+}
+
+.item-desc {
+  color: #885a2d;
+}
+
+.items-section {
+  background-color: #eee1d5;
+  padding-left: 20px;
+  padding-top: 15px;
+  margin-top: 0;
+  padding-right: 20px;
+  grid-area: items-section;
+  border-radius: 15px;
+  justify-content: center;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.item {
+  border-bottom: 3px solid #c89a597c;
+}
+
+.last-item {
+  border-bottom: None;
+}
+
+.items-list {
+  display: grid;
+  width: 100%;
+  height: 90%;
+  list-style: None;
+  padding-left: 0px;
+  margin-top: 0px;
+  padding-bottom: 15px;
+}
+
+.item-quantity {
+  grid-area: item-quantity;
+}
+
+.item-desc {
+  grid-area: item-desc;
+  margin: 0px;
+  padding-bottom: 20px;
+}
+
+.item-title {
+  font-weight: bold;
+  grid-area: item-title;
+}
+
+.item-price {
+  font-weight: bold;
+  grid-area: item-price;
+}
+
+.div-item {
+  display: grid;
+  width: 100%;
+  height: 100px;
+  margin-top: 0px;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-areas:
+    "item-quantity item-title item-price"
+    ". item-desc .";
+}
+
+.name-section {
+  display: flex;
+  flex-direction: column;
+  grid-area: name-section;
+  background-color: #eee1d5;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 15px;
+  justify-content: center;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.div-name {
+  position: relative;
+  display: inline-block;
+}
+
+.name-input {
+  display: flex;
+  border: solid #885a2d;
+  padding: 8px;
+  border-radius: 50px;
+  width: 100%;
+  height: 70%;
+  background-color: #eee1d5;
+}
+
+/* 885a2d */
+.name-label {
+  background-color: #eee1d5;
+  color: #885a2d;
+  font-size: 13px;
+  position: relative;
+  left: 30px;
+  top: 10px;
+  padding: 0 2px;
+}
+
+.payment-section {
+  display: flex;
+  flex-direction: column;
+  grid-area: payment-section;
+  background-color: #eee1d5;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 15px;
+  margin: 0px;
+  justify-content: center;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-card-num {
+  position: relative;
+  display: inline-block;
+}
+
+.card-num-input {
+  display: flex;
+  border: solid #885a2d;
+  padding: 8px;
+  border-radius: 50px;
+  width: 100%;
+  height: 70%;
+  background-color: #eee1d5;
+}
+
+.card-num-label {
+  background-color: #eee1d5;
+  color: #885a2d;
+  font-size: 13px;
+  position: relative;
+  left: 30px;
+  top: 10px;
+  padding: 0 2px;
+}
+
+.div-ccv-num {
+  position: relative;
+  display: inline-block;
+}
+
+.ccv-num-input {
+  display: flex;
+  border: solid #885a2d;
+  padding: 8px;
+  border-radius: 50px;
+  width: 40%;
+  height: 70%;
+  background-color: #eee1d5;
+}
+
+.ccv-num-label {
+  width: 100%;
+  background-color: #eee1d5;
+  color: #885a2d;
+  font-size: 13px;
+  position: relative;
+  left: 30px;
+  top: 10px;
+  padding: 0 2px;
+}
+
+.total-section {
+  margin-left: 40%;
+  grid-area: total-section;
+  display: grid;
+  grid-template-columns: 30% 30%;
+}
+
+.total {
+  font-weight: bold;
+}
+` .total-amount {
+  font-weight: bold;
+}
+
+.div-button {
+  grid-area: div-button;
+}
+
+.order-button {
+  height: 160%;
+  width: 100%;
+  border-radius: 50px;
+  border-color: #bd9043b6;
+  background-color: #bd9043b6;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  font-size: 13pt;
+  white-space: nowrap;
+}

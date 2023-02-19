@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Masters</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <img class="logo" src="logo.png" />
+      <h1 class="brand">Coffee Masters</h1>
+    </nav>
+    <div class="page">
+      <section class="items-section">
+        <h2 class="section-title">ITEMS</h2>
+        <ul class="items-list">
+          <li class="item item-1">
+            <div class="div-item div-item-1">
+              <p class="item-quantity">1x</p>
+              <p class="item-title">Capuccino</p>
+              <p class="item-desc">Lite foam</p>
+              <p class="item-price">$3.35</p>
+            </div>
+          </li>
+          <li class="item item-2">
+            <div class="div-item div-item-2">
+              <p class="item-quantity">1x</p>
+              <p class="item-title">Capuccino</p>
+              <p class="item-desc">Lite foam<br />Double espresso</p>
+              <!-- <p class="item-desc item-desc-2">Double espresso</p> -->
+              <p class="item-price">$3.85</p>
+            </div>
+          </li>
+          <li class="item item-3 last-item">
+            <div class="div-item div-item-3">
+              <p class="item-quantity">1x</p>
+              <p class="item-title">Croissant</p>
+              <p class="item-desc">Butter</p>
+              <p class="item-price">$2.45</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="name-section">
+        <h2 class="section-title">NAME</h2>
+        <div class="div-name">
+          <label for="name" class="name-label">Name for order</label>
+          <input class="name-input" />
+        </div>
+      </section>
+      <section class="payment-section">
+        <h2 class="section-title">PAYMENT</h2>
+        <div class="card-details">
+          <div class="div-card-num">
+            <label for="card-num" class="card-num-label">Card number</label>
+            <input class="card-num-input" />
+          </div>
+          <div class="div-ccv-num">
+            <label for="ccv-num" class="ccv-num-label">CCV number</label>
+            <input class="ccv-num-input" />
+          </div>
+        </div>
+      </section>
+      <section class="total-section">
+        <p class="subtotal">Subtotal:</p>
+        <p class="subtotal-amount">$19.27</p>
+        <p class="tax">Tax:</p>
+        <p class="tax-amount">$0.96</p>
+        <p class="total">Total</p>
+        <p class="total-amount">$20.23</p>
+      </section>
+      <div class="div-button">
+        <button class="order-button">Place order</button>
+      </div>
+    </div>
+  </body>
+</html>
