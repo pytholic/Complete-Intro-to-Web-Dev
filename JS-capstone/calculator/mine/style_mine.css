@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  align-content: center;
+}
+
+.div-main {
+  display: flex;
+  margin: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.display {
+  width: 280px;
+  height: 70px;
+  background-color: black;
+  border: none;
+}
+
+.key {
+  width: 70px;
+  height: 70px;
+  border-radius: 0;
+  border: black solid 1px;
+  font-size: 20pt;
+  background-color: rgba(50, 50, 50, 0.25);
+}
+
+.key-orange {
+  background-color: rgba(224, 137, 7, 0.7);
+  color: white;
+}
+
+.key:hover {
+  background-color: rgb(50, 50, 50, 0.1);
+  transition: all 0.2s ease-in;
+}
+
+.key-orange:hover {
+  background-color: rgba(224, 137, 7, 0.3);
+  transition: all 0.2s ease-in;
+}
+
+.div-keys {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.key-0 {
+  border-bottom: none;
+}
+
+.key-eq {
+  border-bottom: none;
+  border-right: none;
+}
+
+.key:nth-child(4n) {
+  border-left: none;
+}
+
+.key:nth-child(4n-1) {
+  border-right: none;
+}
+
+/* Need to expand C and 0 key */
+.key:first-child {
+  grid-column: span 2;
+  width: 140px;
+  border-left: none;
+}
+
+.key:nth-child(16) {
+  grid-column: span 3;
+  width: 210px;
+  border-bottom: none;
+}
+
+.key:hover {
+  border: 1px solid blue;
+}

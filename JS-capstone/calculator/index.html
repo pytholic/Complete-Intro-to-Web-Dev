@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./calculator.css" />
   </head>
+
   <body>
-    <div class="div-main">
-      <div class="div-display">
-        <input class="display" />
-      </div>
-      <div class="div-keys">
-        <button type="button" class="key key-c">C</button>
-        <button type="button" class="key key-arrow">&#8592;</button>
-        <button type="button" class="key key-divide key-orange">&#247;</button>
-        <button type="button" class="key key-7">7</button>
-        <button type="button" class="key key-8">8</button>
-        <button type="button" class="key key-9">9</button>
-        <button type="button" class="key key-mul key-orange">&#215;</button>
-        <button type="button" class="key key-4">4</button>
-        <button type="button" class="key key-5">5</button>
-        <button type="button" class="key key-6">6</button>
-        <button type="button" class="key key-minus key-orange">-</button>
-        <button type="button" class="key key-1">1</button>
-        <button type="button" class="key key-2">2</button>
-        <button type="button" class="key key-3">3</button>
-        <button type="button" class="key key-plus key-orange">+</button>
-        <button type="button" class="key key-0">0</button>
-        <button type="button" class="key key-eq key-orange">=</button>
-      </div>
+    <div class="calc">
+      <section class="screen">0</section>
+
+      <section class="calc-buttons">
+        <div class="calc-button-row">
+          <button class="calc-button double">C</button>
+          <button class="calc-button">←</button>
+          <button class="calc-button">÷</button>
+        </div>
+        <div class="calc-button-row">
+          <button class="calc-button">7</button>
+          <button class="calc-button">8</button>
+          <button class="calc-button">9</button>
+          <button class="calc-button">×</button>
+        </div>
+        <div class="calc-button-row">
+          <button class="calc-button">4</button>
+          <button class="calc-button">5</button>
+          <button class="calc-button">6</button>
+          <button class="calc-button">-</button>
+        </div>
+        <div class="calc-button-row">
+          <button class="calc-button">1</button>
+          <button class="calc-button">2</button>
+          <button class="calc-button">3</button>
+          <button class="calc-button">+</button>
+        </div>
+        <div class="calc-button-row">
+          <button class="calc-button triple">0</button>
+          <button class="calc-button">=</button>
+        </div>
+      </section>
     </div>
-    <script src="script.js"></script>
+    <script src="./calculator.js"></script>
   </body>
 </html>

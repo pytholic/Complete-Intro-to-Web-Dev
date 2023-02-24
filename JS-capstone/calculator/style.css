@@ -3,85 +3,71 @@
 }
 
 body {
-  margin: 0;
   padding: 0;
-  font-family: monospace;
-  align-content: center;
+  margin: 0;
 }
 
-.div-main {
-  display: flex;
-  margin: 30px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.display {
-  width: 280px;
-  height: 70px;
+.calc {
+  width: 400px;
   background-color: black;
+  color: white;
+}
+
+.screen {
+  color: white;
+  font-size: 40px;
+  font-family: "Courier New", Courier, monospace;
+  text-align: right;
+  padding: 20px 5px;
+}
+
+.calc-button {
+  background-color: #d8d9db;
+  color: black;
+  height: 100px;
+  width: 24.5%;
   border: none;
-}
-
-.key {
-  width: 70px;
-  height: 70px;
   border-radius: 0;
-  border: black solid 1px;
-  font-size: 16pt;
-  background-color: rgba(200, 200, 200, 0.75);
+  font-size: 40px;
+  cursor: pointer;
 }
 
-.key:hover {
-  background-color: rgb(200, 200, 200, 0.5);
-  transition: all 0.2s ease-in;
+.calc-button:hover {
+  background-color: #ebebeb;
 }
 
-.key-orange:hover {
-  background-color: rgba(227, 150, 62, 0.5);
-  transition: all 0.2s ease-in;
+.calc-button:active {
+  background-color: #bbbcbe;
 }
 
-.div-keys {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+.double {
+  width: 49.7%;
 }
 
-.key-0 {
-  border-bottom: none;
+.triple {
+  width: 74.8%;
 }
 
-.key-eq {
-  border-bottom: none;
-  border-right: none;
+.calc-button:last-child {
+  background-color: #df974c;
+  color: white;
 }
 
-.key:nth-child(4n) {
-  border-left: none;
+.calc-button:last-child:hover {
+  background-color: #dfb07e;
 }
 
-.key:nth-child(4n-1) {
-  border-right: none;
+.calc-button:last-child:active {
+  background-color: #dd8d37;
 }
 
-.key-orange {
-  background-color: rgba(227, 150, 62, 0.75);
+.calc-button-row {
+  display: flex;
+  align-content: stretch;
+  justify-content: space-between;
+  margin-bottom: 0.5%;
 }
 
-/* Need to expand C and 0 key */
-.key:first-child {
-  grid-column: span 2;
-  width: 140px;
-  border-left: none;
-}
-
-.key:nth-child(16) {
-  grid-column: span 3;
-  width: 210px;
-  border-bottom: none;
-}
-
-.key:hover {
-  border: 1px solid blue;
+.calc-button-row:last-child {
+  padding-bottom: 0;
 }
