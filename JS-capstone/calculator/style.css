@@ -33,15 +33,6 @@ body {
   background-color: rgba(128, 128, 128, 0.25);
 }
 
-.left-edge-key {
-  border-left: none;
-}
-
-.right-edge-key {
-  border-right: none;
-  background-color: rgba(227, 150, 62, 0.75);
-}
-
 .key:hover {
   background-color: rgb(128, 128, 128, 0.5);
   transition: all 0.2s ease-in;
@@ -52,32 +43,45 @@ body {
   transition: all 0.2s ease-in;
 }
 
-.key:hover {
-  border: 1px solid blue;
-}
-
 .div-keys {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.key-0 {
+  border-bottom: none;
+}
+
+.key-eq {
+  border-bottom: none;
+  border-right: none;
+}
+
+.key:nth-child(4n) {
+  border-left: none;
+}
+
+.key:nth-child(4n-1) {
+  border-right: none;
+}
+
+.key-orange {
+  background-color: rgba(227, 150, 62, 0.75);
+}
+
 /* Need to expand C and 0 key */
-.key:nth-child(1) {
+.key:first-child {
   grid-column: span 2;
   width: 140px;
+  border-left: none;
 }
 
 .key:nth-child(16) {
   grid-column: span 3;
   width: 210px;
-  /* border-bottom: 0; */
-}
-
-.key-0,
-.key-eq {
   border-bottom: none;
 }
 
-/* .key:nth-child(4n) {
-  border-left: none;
-} */
+.key:hover {
+  border: 1px solid blue;
+}
