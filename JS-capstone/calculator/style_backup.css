@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  align-content: center;
+}
+
+.div-main {
+  display: flex;
+  margin: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.display {
+  width: 280px;
+  height: 70px;
+  background-color: black;
+  border: none;
+}
+
+.key {
+  width: 70px;
+  height: 70px;
+  border-radius: 0;
+  border: black solid 1px;
+  font-size: 16pt;
+  background-color: rgba(128, 128, 128, 0.25);
+}
+
+.key-c {
+  grid-area: key-c;
+}
+
+.key-arrow {
+  grid-area: key-arrow;
+}
+
+.key-divide {
+  grid-area: key-divide;
+}
+
+.key-7 {
+  grid-area: key-7;
+}
+
+.key-8 {
+  grid-area: key-8;
+}
+
+.key-9 {
+  grid-area: key-9;
+}
+
+.key-mul {
+  grid-area: key-mul;
+}
+
+.key-4 {
+  grid-area: key-4;
+}
+
+.key-5 {
+  grid-area: key-5;
+}
+
+.key-6 {
+  grid-area: key-6;
+}
+
+.key-minus {
+  grid-area: key-minus;
+}
+
+.key-1 {
+  grid-area: key-1;
+}
+
+.key-2 {
+  grid-area: key-2;
+}
+
+.key-3 {
+  grid-area: key-3;
+}
+
+.key-plus {
+  grid-area: key-plus;
+}
+
+.key-0 {
+  grid-area: key-0;
+}
+
+.key-eq {
+  grid-area: key-eq;
+  border-bottom: 0;
+}
+
+.left-edge-key {
+  border-left: none;
+}
+
+.right-edge-key {
+  border-right: none;
+  background-color: rgba(227, 150, 62, 0.75);
+}
+
+.key-double {
+  width: 140px;
+}
+
+.key-triple {
+  width: 210px;
+  border-bottom: 0;
+}
+
+.key:hover {
+  background-color: rgb(128, 128, 128, 0.5);
+  transition: all 0.2s ease-in;
+}
+
+.key-orange:hover {
+  background-color: rgba(227, 150, 62, 1);
+  transition: all 0.2s ease-in;
+}
+
+.key:hover {
+  border: 1px solid blue;
+}
+
+.div-keys {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "key-c key-c key-arrow key-divide"
+    "key-7 key-8 key-9 key-mul"
+    "key-4 key-5 key-6 key-minus"
+    "key-1 key-2 key-3 key-plus"
+    "key-0 key-0 key-0 key-eq";
+}
