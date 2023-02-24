@@ -30,16 +30,16 @@ body {
   border-radius: 0;
   border: black solid 1px;
   font-size: 16pt;
-  background-color: rgba(128, 128, 128, 0.25);
+  background-color: rgba(200, 200, 200, 0.75);
 }
 
 .key:hover {
-  background-color: rgb(128, 128, 128, 0.5);
+  background-color: rgb(200, 200, 200, 0.5);
   transition: all 0.2s ease-in;
 }
 
 .key-orange:hover {
-  background-color: rgba(227, 150, 62, 1);
+  background-color: rgba(227, 150, 62, 0.5);
   transition: all 0.2s ease-in;
 }
 
